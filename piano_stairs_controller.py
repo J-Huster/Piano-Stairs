@@ -29,30 +29,62 @@ time.sleep(.01)  # pauses program for .01 second
 trig3 = 1
 echo3 = 1
 
+GPIO.setup(trig3, GPIO.OUT)  # sets up trig sensor as output
+GPIO.output(trig3, False)  # sets output to be false
+GPIO.setup(echo3, GPIO.IN)  # sets up echo sensor as input
+time.sleep(.01)  # pauses program for .01 second
+
 trig4 = 1
 echo4 = 1
+
+GPIO.setup(trig4, GPIO.OUT)  # sets up trig sensor as output
+GPIO.output(trig4, False)  # sets output to be false
+GPIO.setup(echo4, GPIO.IN)  # sets up echo sensor as input
+time.sleep(.01)  # pauses program for .01 second
 
 trig5 = 1
 echo5 = 1
 
+GPIO.setup(trig5, GPIO.OUT)  # sets up trig sensor as output
+GPIO.output(trig5, False)  # sets output to be false
+GPIO.setup(echo5, GPIO.IN)  # sets up echo sensor as input
+time.sleep(.01)  # pauses program for .01 second
+
 trig6 = 1
 echo6 = 1
+
+GPIO.setup(trig6, GPIO.OUT)  # sets up trig sensor as output
+GPIO.output(trig6, False)  # sets output to be false
+GPIO.setup(echo6, GPIO.IN)  # sets up echo sensor as input
+time.sleep(.01)  # pauses program for .01 second
 
 trig7 = 1
 echo7 = 1
 
+GPIO.setup(trig7, GPIO.OUT)  # sets up trig sensor as output
+GPIO.output(trig7, False)  # sets output to be false
+GPIO.setup(echo7, GPIO.IN)  # sets up echo sensor as input
+time.sleep(.01)  # pauses program for .01 second
+
 trig8 = 1
 echo8 = 1
 
-sensors = [trig1, echo1, trig2, echo2]
+GPIO.setup(trig8, GPIO.OUT)  # sets up trig sensor as output
+GPIO.output(trig8, False)  # sets output to be false
+GPIO.setup(echo8, GPIO.IN)  # sets up echo sensor as input
+time.sleep(.01)  # pauses program for .01 second
 
-# sets up all of the sensors
+sensors = [trig1, echo1, trig2, echo2, trig3, echo3, trig4, echo4, trig5, echo5, trig6, echo6, trig7, echo7, trig8, echo8]
+
+# for loop sets up all of the sensors (doesn't work)
 #for s in range(len(sensors)):
 #    if s % 2 == 0:
-#        GPIO.setup(s, GPIO.OUT)  # sets up trig sensor as output
-#        GPIO.output(s, False)  # sets output to be false
+#        TRIG = sensors[s]
+#        GPIO.setup(TRIG, GPIO.OUT)  # sets up trig sensor as output
+#        GPIO.output(TRIG, False)  # sets output to be false
 #    if s % 2 != 0:
-#        GPIO.setup(s, GPIO.IN)  # sets up echo sensor as input
+#        ECHO = sensors[s]
+#        GPIO.setup(ECHO, GPIO.IN)  # sets up echo sensor as input
 #    time.sleep(.01)  # pauses program for .01 second
 
 while True:

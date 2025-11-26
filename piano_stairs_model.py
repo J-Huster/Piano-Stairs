@@ -17,6 +17,18 @@ def getSound(num):
         return "/home/johaha/Desktop/Piano-Stairs/test_sound.mp3"
     elif num == 3:
         return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
+    elif num == 5:
+        return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
+    elif num == 7:
+        return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
+    elif num == 9:
+        return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
+    elif num == 11:
+        return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
+    elif num == 13:
+        return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
+    elif num == 15:
+        return "/home/johaha/Desktop/Piano-Stairs/test_sound_2.mp3"
     else:
         return None
 
